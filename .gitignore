@@ -29,5 +29,6 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-# IDE project files
+# IDE specific project files
 *.sublime-*
+.idea/

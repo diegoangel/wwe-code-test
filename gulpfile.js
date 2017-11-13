@@ -35,7 +35,7 @@ gulp.task('fonts', function() {
         .pipe(gulp.dest(target + '/assets/fonts'));
 });
 
-gulp.task('build', ['clean', 'sass', 'images'], function() {
+gulp.task('build', ['sass', 'images'], function() {
     return gulp.src('./index.html')
         .pipe($.usemin({
             html: [ 

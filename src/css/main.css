@@ -6798,17 +6798,19 @@ body {
       text-align: center;
       font-weight: 700;
       letter-spacing: 2px; }
-    header div.container .join-free-month div {
+    header div.container div.join-free-month {
       color: #fff;
       font-size: 15px; }
-      header div.container .join-free-month div a {
-        width: 256px;
-        height: 60px;
-        background-color: #ec1828;
-        color: #fff;
-        font-weight: 700;
-        font-size: 19px;
-        line-height: 45px; }
+      header div.container div.join-free-month .join-free-month-container {
+        width: 256px; }
+        header div.container div.join-free-month .join-free-month-container a {
+          width: 256px;
+          height: 60px;
+          background-color: #ec1828;
+          color: #fff;
+          font-weight: 700;
+          font-size: 19px;
+          line-height: 45px; }
     header div.container .summer-slam-live h3 {
       color: #ec1828;
       font-size: 19px;
@@ -6823,7 +6825,7 @@ body {
         max-width: 100%;
         height: auto; }
   .subheader {
-    height: 130px;
+    height: auto;
     background-color: #ced4da;
     background: -webkit-gradient(linear, left top, right top, from(#3c3c45), color-stop(25%, #55494d), color-stop(50%, #3c445b), color-stop(75%, #55494d), to(#3c4156));
     background: linear-gradient(to right, #3c3c45 0%, #55494d 25%, #3c445b 50%, #55494d 75%, #3c4156 100%);
@@ -6836,13 +6838,32 @@ body {
   .grid-divider > [class*='col-'] {
     position: static; }
   .grid-divider > [class*='col-']:nth-child(n+2):before {
-    content: "";
-    border-left: 1px solid #DDD;
+    content: '';
+    border-left: 2px solid #fff;
     position: absolute;
-    top: 0;
+    top: 30px;
+    height: 85px;
     bottom: 0; }
-  .col-padding {
-    padding: 0 15px; } }
+  .grid-divider-gray {
+    position: relative;
+    padding: 0; }
+  .grid-divider-gray > [class*='col-'] {
+    position: static; }
+  .grid-divider-gray > [class*='col-']:nth-child(n+2):before {
+    content: '';
+    border-left: 2px solid #868e96;
+    position: absolute;
+    top: 30px;
+    height: 85px;
+    bottom: 0; }
+  .down-arrow {
+    margin-top: 69px;
+    width: 35px;
+    height: 15px;
+    margin-left: 30px; }
+    .down-arrow img {
+      width: 100%;
+      height: auto; } }
 
 .navbar-wwe {
   background-color: #000;
@@ -6886,3 +6907,18 @@ body {
 
 .toggler-wwe .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' \a     xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='5' \a     stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.nav-divider {
+  position: relative;
+  padding: 0; }
+
+.nav-divider > [class*='nav-item'] {
+  position: static; }
+
+.nav-divider > [class*='nav-item']:nth-child(n+2):before {
+  content: '';
+  border-left: 2px solid #fff;
+  position: absolute;
+  top: 10px;
+  height: 15px;
+  bottom: 0; }

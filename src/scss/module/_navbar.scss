@@ -53,3 +53,21 @@
     xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='5' 
     stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+.nav-divider {
+    position: relative;
+    padding: 0;
+}
+
+.nav-divider>[class*='nav-item'] {
+    position: static;
+}
+
+.nav-divider>[class*='nav-item']:nth-child(n+2):before {
+    content: '';
+    border-left: 2px solid $white;        
+    position: absolute;
+    top: 10px;
+    height: 15px;
+    bottom: 0;
+}

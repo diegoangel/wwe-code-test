@@ -54,20 +54,26 @@
     stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav-divider {
-    position: relative;
-    padding: 0;
+@media (min-width: 1024px) {
+    .nav-divider {
+        position: relative;
+        padding: 0;
+    }
+
+    .nav-divider>[class*='nav-item'] {
+        position: static;
+    }
+
+    .nav-divider>[class*='nav-item']:nth-child(n+2):before {
+        content: '';
+        border-left: 2px solid $white;        
+        position: absolute;
+        top: 10px;
+        height: 15px;
+        bottom: 0;
+    }
 }
 
-.nav-divider>[class*='nav-item'] {
-    position: static;
-}
-
-.nav-divider>[class*='nav-item']:nth-child(n+2):before {
-    content: '';
-    border-left: 2px solid $white;        
-    position: absolute;
-    top: 10px;
-    height: 15px;
-    bottom: 0;
+.navbar-wwe .nav-item .join-now {
+    background-color: $wwe-red; 
 }

@@ -6762,76 +6762,99 @@ body {
   padding-top: 63px;
   font-family: Roboto !important; }
 
-@media (min-width: 992px) {
-  header {
-    background-image: url("../../assets/images/bg_1.png");
-    background-size: cover;
-    background-position: top center;
-    height: auto; }
-  header:before {
-    content: '';
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    height: 100%; }
-  header div.container {
-    position: relative;
-    height: 100vh;
-    min-height: 775px;
-    padding-top: 300px;
-    padding-bottom: 0;
-    z-index: 1; }
-    header div.container hr {
-      width: 610px;
-      height: 3px;
-      background-color: #ec1828;
-      margin-bottom: 0px; }
-    header div.container h1 {
-      padding-top: 0;
-      font-size: 34px;
-      color: #fff;
-      text-shadow: 0 3px 7px rgba(0, 0, 0, 0.93);
-      white-space: pre-line;
-      text-align: center;
-      font-weight: 700;
-      letter-spacing: 2px; }
-    header div.container div.join-free-month {
-      color: #fff;
-      font-size: 15px; }
-      header div.container div.join-free-month .join-free-month-container {
-        width: 256px; }
-        header div.container div.join-free-month .join-free-month-container a {
-          width: 256px;
-          height: 60px;
-          background-color: #ec1828;
-          color: #fff;
-          font-weight: 700;
-          font-size: 19px;
-          line-height: 45px; }
-    header div.container .summer-slam-live h3 {
-      color: #ec1828;
-      font-size: 19px;
-      font-weight: 700; }
-      header div.container .summer-slam-live h3 p {
+header {
+  background-image: url("../../assets/images/bg_1.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  resize: both;
+  overflow: scroll; }
+
+header:before {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%; }
+
+header div.container {
+  position: relative;
+  height: 100vh;
+  min-height: 775px;
+  padding-top: 300px;
+  padding-bottom: 0;
+  z-index: 1; }
+  @media (max-width: 1023px) {
+    header div.container {
+      padding-top: 100px; } }
+  header div.container hr {
+    width: 610px;
+    height: 3px;
+    background-color: #ec1828;
+    margin-bottom: 0px; }
+    @media (max-width: 1023px) {
+      header div.container hr {
+        width: 270px; } }
+  header div.container h1 {
+    padding-top: 0;
+    font-size: 34px;
+    color: #fff;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.93);
+    white-space: pre-line;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px; }
+    @media (max-width: 1023px) {
+      header div.container h1 {
+        font-size: 22px; } }
+  header div.container div.join-free-month {
+    color: #fff;
+    font-size: 15px; }
+    header div.container div.join-free-month .join-free-month-container {
+      width: 256px; }
+      header div.container div.join-free-month .join-free-month-container a {
+        width: 256px;
+        height: 60px;
+        background-color: #ec1828;
         color: #fff;
-        font-size: 17px; }
-    header div.container .summer-slam-live .summer-slam-image-container {
-      width: 133px;
-      height: 78px; }
-      header div.container .summer-slam-live .summer-slam-image-container img {
-        max-width: 100%;
-        height: auto; }
-  .subheader {
-    height: auto;
-    background-color: #ced4da;
-    background: -webkit-gradient(linear, left top, right top, from(#3c3c45), color-stop(25%, #55494d), color-stop(50%, #3c445b), color-stop(75%, #55494d), to(#3c4156));
-    background: linear-gradient(to right, #3c3c45 0%, #55494d 25%, #3c445b 50%, #55494d 75%, #3c4156 100%);
-    position: relative;
-    z-index: 2;
-    color: #fff; }
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 45px; }
+    @media (max-width: 1023px) {
+      header div.container div.join-free-month .join-free-month-container {
+        width: 100%; }
+        header div.container div.join-free-month .join-free-month-container a {
+          width: 266px;
+          height: 50px;
+          font-size: 15px;
+          line-height: 25px; } }
+  header div.container .summer-slam-live h3 {
+    color: #ec1828;
+    font-size: 19px;
+    font-weight: 700; }
+    header div.container .summer-slam-live h3 p {
+      color: #fff;
+      font-size: 17px; }
+  header div.container .summer-slam-live .summer-slam-image-container {
+    width: 133px;
+    height: 78px; }
+    header div.container .summer-slam-live .summer-slam-image-container img {
+      max-width: 100%;
+      height: auto; }
+
+.subheader {
+  height: auto;
+  background-color: #ced4da;
+  background: -webkit-gradient(linear, left top, right top, from(#3c3c45), color-stop(25%, #55494d), color-stop(50%, #3c445b), color-stop(75%, #55494d), to(#3c4156));
+  background: linear-gradient(to right, #3c3c45 0%, #55494d 25%, #3c445b 50%, #55494d 75%, #3c4156 100%);
+  position: relative;
+  z-index: 2;
+  color: #fff; }
+
+@media (min-width: 1024px) {
   .grid-divider {
     position: relative;
     padding: 0; }
@@ -6855,15 +6878,16 @@ body {
     position: absolute;
     top: 30px;
     height: 85px;
-    bottom: 0; }
-  .down-arrow {
-    margin-top: 69px;
-    width: 35px;
-    height: 15px;
-    margin-left: 30px; }
-    .down-arrow img {
-      width: 100%;
-      height: auto; } }
+    bottom: 0; } }
+
+.down-arrow {
+  margin-top: 69px;
+  width: 35px;
+  height: 15px;
+  margin-left: 30px; }
+  .down-arrow img {
+    width: 100%;
+    height: auto; }
 
 .navbar-wwe {
   background-color: #000;
@@ -6908,17 +6932,19 @@ body {
 .toggler-wwe .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' \a     xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='5' \a     stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-.nav-divider {
-  position: relative;
-  padding: 0; }
+@media (min-width: 1024px) {
+  .nav-divider {
+    position: relative;
+    padding: 0; }
+  .nav-divider > [class*='nav-item'] {
+    position: static; }
+  .nav-divider > [class*='nav-item']:nth-child(n+2):before {
+    content: '';
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 10px;
+    height: 15px;
+    bottom: 0; } }
 
-.nav-divider > [class*='nav-item'] {
-  position: static; }
-
-.nav-divider > [class*='nav-item']:nth-child(n+2):before {
-  content: '';
-  border-left: 2px solid #fff;
-  position: absolute;
-  top: 10px;
-  height: 15px;
-  bottom: 0; }
+.navbar-wwe .nav-item .join-now {
+  background-color: #ec1828; }

@@ -5,12 +5,14 @@ body {
     font-family: Roboto !important;
 }
 
-@media (min-width: 992px) {
+
     header{
         background-image: url('../../assets/images/bg_1.png');
         background-size: cover;
         background-position: top center;
-        height: auto;
+        background-repeat: no-repeat;
+        resize: both;
+        overflow: scroll;      
     }
 
     header:before {
@@ -29,12 +31,18 @@ body {
         padding-top: 300px;
         padding-bottom: 0;
         z-index: 1;
+        @media (max-width: 1023px) {
+           padding-top: 100px;
+        }        
 
         hr {
             width: 610px; 
             height: 3px;   
             background-color: #ec1828;
-            margin-bottom: 0px
+            margin-bottom: 0px;
+            @media (max-width: 1023px) {
+                width: 270px; 
+            }                
         }
 
         h1 {
@@ -46,6 +54,9 @@ body {
             text-align: center;
             font-weight: $font-weight-bold;
             letter-spacing: 2px;
+            @media (max-width: 1023px) {
+                font-size: 22px;
+            }
         }
 
         div.join-free-month {
@@ -65,6 +76,17 @@ body {
                     line-height: 45px;           
                 }
             } 
+            @media (max-width: 1023px) {
+                .join-free-month-container {
+                width: 100%;
+                a {
+                    width: 266px;
+                    height: 50px; 
+                    font-size: 15px;
+                    line-height: 25px;    
+                }
+            }
+            }
         }
 
         .summer-slam-live {
@@ -99,6 +121,7 @@ body {
         color: $white;     
     }
 
+@media (min-width: 1024px) {
     .grid-divider {
         position: relative;
         padding: 0;
@@ -134,6 +157,7 @@ body {
         height: 85px;
         bottom: 0;
     }
+}
 
     .down-arrow {
         margin-top: 69px;
@@ -146,4 +170,4 @@ body {
             height: auto;
         }      
     }     
-}
+

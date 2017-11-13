@@ -5,40 +5,104 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="WWE Code Test">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
-    <link rel="apple-touch-icon-precomposed" href="/all/themes/custom/wwe_theme/apple-touch-icon-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/custom/wwe_theme/apple-touch-icon-precomposed-72x72.png" sizes="72x72" />
-    <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/custom/wwe_theme/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
-    <link rel="apple-touch-icon-precomposed" href="/sites/all/themes/custom/wwe_theme/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+    <link rel="author" href="humans.txt" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+    <link rel="apple-touch-icon-precomposed" href="src/assets/images/apple-touch-icon-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="src/assets/images/apple-touch-icon-precomposed-72x72.png" sizes="72x72" />
+    <link rel="apple-touch-icon-precomposed" href="src/assets/images/apple-touch-icon-precomposed-114x114.png" sizes="114x114" />
+    <link rel="apple-touch-icon-precomposed" href="src/assets/images/apple-touch-icon-precomposed-144x144.png" sizes="144x144" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
+    <!-- build:css styles.css -->
+    <link rel="stylesheet" href="src/css/main.css">
+    <!-- endbuild -->
 </head>
 <body>
-    <div>
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Navbar</a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-        
+    <nav class="navbar fixed-top navbar-expand-lg navbar-wwe">
+        <div class="container">
+            <a class="navbar-brand logo" href="http://www.wwe.com/wwenetwork">
+                <img src="/assets/images/logo.png" class="d-inline-block align-top" alt="WWE Logo">
+            </a>
+            <button class="navbar-toggler toggler-wwe" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Redeem Prepaid Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-join-now my-2 mx-4 my-sm-0" type="button">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </nav>    
+    <header>
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <hr>
+                <h1>
+                    The ONLY place to watch SummerSlam,
+                    WrestleMania and thousands of hours of
+                    WWE video on demand.
+                </h1>
+            </div>
+            <div class="row justify-content-center pt-3">
+                <div class="col-4 mt-3 float-right join-free-month">
+                    <div class="text-center">
+                    <a class="btn" href="#">
+                        Join Free for a Month
+                    </a>
+                    <div class="font-italic my-1">
+                        No commitment, cancel anytime
+                    </div>
+                    </div>
+                </div>
+                <div class="col-4 float-left summer-slam-live">
+                    <div class="float-left summer-slam-image-container">
+                        <img alt="Summer Slam" src="../../assets/images/summer_slam.png">
+                    </div>                    
+                    <h3 class="float-left ml-4 mt-4">
+                        LIVE
+                        <p class="mb-0">This Sunday</p>
+                        <p>7e/4p</p>
+                    </h3>
+                </div>
+                <div class="down-arrow"></div>
+            </div>
+        </div>            
+    </header>
+    <section class="subheader">
+    <div class="container">
+        <div class=" row justify-content-center">
+        <div class="col-4">
+            <p class="pt-5">
+                <span class="font-weight-bold">For just $9.99 per month</span>, WWE Network includes every pay-per-view event live at no additional cost
+            </p>
+        </div>
+        <div class="col-3">
+            <p class="pt-5">
+                <span class="font-weight-bold">Unlimited access</span>, - anywhere,  anytime, on any device
+            </p>
+        </div>
+        <div class="col-3">
+            <p class="pt-5">  
+                <span class="font-weight-bold">First month FREE</span> - No commitment, cancel anytime
+            </p>
+        </div>
     </div>
+        </div>  
+        </section>  
+
+    <!-- build:js scripts.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/app.js"></script>
+    <!-- endbuild -->    
 </body>
 </html>

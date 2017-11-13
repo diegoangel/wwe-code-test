@@ -1,7 +1,6 @@
-@import "base/base";
 @import "base/variables";
-
-@import "module/nav";
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@import "base/base";
+@import "module/navbar";

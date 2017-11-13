@@ -1,5 +1,116 @@
 
 body {
-  min-height: 75rem;
-  padding-top: 4.5rem;
+    background-color: $black;
+    padding-top: 63px;
+    font-family: Roboto !important;
+}
+
+@media (min-width: 992px) {
+    header{
+        background-image: url('../../assets/images/bg_1.png');
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+    }
+
+    header:before {
+        content: '';
+        position: fixed;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background: rgba(0,0,0,.6);
+        height: 100%;
+    }
+
+    header div.container {
+        position: relative;
+        height:100vh;
+        min-height: 775px;
+        padding-top: 300px;
+        padding-bottom: 0;
+        z-index: 1;
+
+        hr {
+            width: 610px; 
+            height: 3px;   
+            background-color: #ec1828;
+            margin-bottom: 0px
+        }
+
+        h1 {
+            padding-top: 0;
+            font-size: 34px;
+            color: $white;
+            text-shadow: 0 3px 7px rgba(0,0,0,.93);
+            white-space: pre-line;
+            text-align: center;
+            font-weight: $font-weight-bold;
+            letter-spacing: 2px;
+        }
+
+        .join-free-month {
+            div {
+                color: $white;
+                font-size: 15px;          
+                a {
+                    width: 256px;
+                    height: 60px;
+                    background-color: $wwe-red;
+                    color: $white;
+                    font-weight: $font-weight-bold;
+                    font-size: 19px;
+                    line-height: 45px;           
+                }
+            }
+        }
+
+        .summer-slam-live {
+            h3 {
+                color: $wwe-red;
+                font-size: 19px;
+                font-weight: $font-weight-bold;
+
+                p {
+                    color: $white;
+                    font-size: 17px;
+                }   
+            }
+            .summer-slam-image-container {
+                width: 133px;
+                height: 78px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .subheader {
+        height: 130px;
+        background-color: $gray-400 ;
+        background: linear-gradient(to right,  #3c3c45 0%, #55494d 25%, #3c445b 50%, #55494d 75%, #3c4156 100%);
+        position: relative;
+        z-index: 2;
+        color: $white;     
+    }
+
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
 }

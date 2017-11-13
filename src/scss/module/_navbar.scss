@@ -1,0 +1,55 @@
+.navbar-wwe {
+    background-color: #000;
+    font-size: 0.9em;
+    min-height: 54px;
+    font-weight: $font-weight-bold;    
+}
+
+.navbar-wwe .container {
+    max-width:1140px
+}
+
+.navbar-wwe .navbar-brand,
+.navbar-wwe .navbar-text {
+    color: $white;
+}
+
+.navbar-wwe .navbar-nav .nav-link {
+    color: $white;
+}
+
+.navbar-wwe .nav-item.active .nav-link,
+.navbar-wwe .nav-item:hover .nav-link {
+    color: $white;
+}
+
+.navbar-wwe .logo {
+    width: 226px;
+    height: 47px;
+
+    img {
+        width: 75%;
+        height: auto;        
+    }
+}
+
+.navbar-wwe .btn-join-now {
+    width: 106px;
+    height: 33px;
+    background-color: $wwe-red;
+    color: $white;
+    border-color: $wwe-red;
+    font-size: 0.9em;
+    font-weight: $font-weight-bold;
+}
+
+.toggler-wwe.navbar-toggler {
+    border-color: $black;
+    color: $white;
+}
+
+.toggler-wwe .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' 
+    xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='5' 
+    stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

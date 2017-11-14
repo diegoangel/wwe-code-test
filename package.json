@@ -24,6 +24,7 @@
   "homepage": "https://github.com/diegoangel/wwe-code-test#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "gulp-replace": "^0.6.1",
     "jquery": "^3.2.1",
     "roboto-fontface-woff": "^0.8.0"
   },

@@ -20,12 +20,12 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('images', function () {
-    return gulp.src(source + '/assets/images/**/*')
-        .pipe($.cache($.imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true
-        })))
+    return gulp.src(source + '/assets/images/*')
+        .pipe($.imagemin([
+            $.imagemin.gifsicle({interlaced: true}),
+            $.imagemin.jpegtran({progressive: true}),
+            $.imagemin.optipng({optimizationLevel: 5})
+        ]))
         .pipe(gulp.dest(target + '/assets/images'))
         .pipe($.size());    
 });
@@ -44,6 +44,7 @@ gulp.task('build', ['sass', 'images'], function() {
                 }) 
             ],
             css: [
+                $.replace('../../', ''),
                 $.cssnano(),
                 $.rev()
             ],

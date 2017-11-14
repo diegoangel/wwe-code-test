@@ -5,121 +5,147 @@ body {
     font-family: Roboto !important;
 }
 
+header{
+    background-image: url('../../assets/images/bg_1.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    resize: both;
+}
 
-    header{
-        background-image: url('../../assets/images/bg_1.png');
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        resize: both;
-        overflow: scroll;      
-    }
+header:before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.6);
+    height: 100%;
+}
 
-    header:before {
-        content: '';
-        position: fixed;
-        left: 0; right: 0;
-        top: 0; bottom: 0;
-        background: rgba(0,0,0,.6);
-        height: 100%;
-    }
+header div.container {
+    position: relative;
+    height:100vh;
+    min-height: 775px;
+    padding-top: 300px;
+    padding-bottom: 0;
+    z-index: 1;
+    @media (max-width: 1023px) {
+       padding-top: 100px;
+    }        
 
-    header div.container {
-        position: relative;
-        height:100vh;
-        min-height: 775px;
-        padding-top: 300px;
-        padding-bottom: 0;
-        z-index: 1;
+    hr {
+        width: 610px; 
+        height: 3px;   
+        background-color: #ec1828;
+        margin-bottom: 0px;
         @media (max-width: 1023px) {
-           padding-top: 100px;
-        }        
+            width: 270px; 
+        }                
+    }
 
-        hr {
-            width: 610px; 
-            height: 3px;   
-            background-color: #ec1828;
-            margin-bottom: 0px;
-            @media (max-width: 1023px) {
-                width: 270px; 
-            }                
+    h1 {
+        padding-top: 0;
+        font-size: 34px;
+        color: $white;
+        text-shadow: 0 3px 7px rgba(0,0,0,.93);
+        white-space: pre-line;
+        text-align: center;
+        font-weight: $font-weight-bold;
+        letter-spacing: 2px;
+        @media (max-width: 1023px) {
+            font-size: 22px;
         }
+    }
 
-        h1 {
-            padding-top: 0;
-            font-size: 34px;
-            color: $white;
-            text-shadow: 0 3px 7px rgba(0,0,0,.93);
-            white-space: pre-line;
-            text-align: center;
-            font-weight: $font-weight-bold;
-            letter-spacing: 2px;
-            @media (max-width: 1023px) {
-                font-size: 22px;
-            }
-        }
+    div.join-free-month {
+        color: $white;
+        font-size: 15px;
+        
+        .join-free-month-container {
+            width: 256px;
+            margin-right: 30px;
 
-        div.join-free-month {
-            color: $white;
-            font-size: 15px;
-            
-            .join-free-month-container {
+            a {
                 width: 256px;
-
-                a {
-                    width: 256px;
-                    height: 60px;
-                    background-color: $wwe-red;
-                    color: $white;
-                    font-weight: $font-weight-bold;
-                    font-size: 19px;
-                    line-height: 45px;           
-                }
-            } 
-            @media (max-width: 1023px) {
-                .join-free-month-container {
+                height: 60px;
+                background-color: $wwe-red;
+                color: $white;
+                font-weight: $font-weight-bold;
+                font-size: 19px;
+                line-height: 45px;           
+            }
+        } 
+        @media (max-width: 1023px) {
+            .join-free-month-container {
+                margin-right:  0px;
                 width: 100%;
                 a {
                     width: 266px;
                     height: 50px; 
                     font-size: 15px;
-                    line-height: 25px;    
+                    line-height: 38px;    
                 }
             }
-            }
         }
+    }
 
-        .summer-slam-live {
+    .summer-slam-live {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display:flex;
+        flex-wrap: wrap; 
+        justify-content: flex-left;
+        align-items: stretch;
+        padding:0 -10px;
+
+        @media (max-width: 1023px) {
+            justify-content: center;
+            margin-top: 30px
+        }            
+
+        .summer-slam-info-container {
+            width: 135px;
+            height: 100;
+            margin-left: 20px;
+
             h3 {
                 color: $wwe-red;
-                font-size: 19px;
+                font-size: 22px;
                 font-weight: $font-weight-bold;
-
-                p {
-                    color: $white;
-                    font-size: 17px;
-                }   
+                margin: 0;                 
             }
-            .summer-slam-image-container {
-                width: 133px;
-                height: 78px;
 
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
+            p {
+                color: $white;
+                font-size: 19px;
+                margin: 0;
+                line-height: 22px;
+            }
+        }
+
+        .summer-slam-image-container {
+            width: 133px;
+            height: auto;
+            margin-left: 30px;
+
+            img {
+                max-width: 100%;
+                height: auto;                    
             }
         }
     }
+}
 
-    .subheader {
-        height: auto;
-        background-color: $gray-400 ;
-        background: linear-gradient(to right,  #3c3c45 0%, #55494d 25%, #3c445b 50%, #55494d 75%, #3c4156 100%);
-        position: relative;
-        z-index: 2;
-        color: $white;     
-    }
+.subheader {
+    height: auto;
+    background-color: $gray-400 ;
+    background: linear-gradient(to right,  #3c3c45 0%, #55494d 25%, #3c445b 50%, #55494d 75%, #3c4156 100%);
+    position: relative;
+    z-index: 2;
+    color: $white;     
+}
 
 @media (min-width: 1024px) {
     .grid-divider {
@@ -149,7 +175,7 @@ body {
         position: static;
     }
 
-    .grid-divider-gray>[class*='col-']:nth-child(n+2):before {
+    .grid-divider-gray>[class*='col-']:nth-child(n+2):after {
         content: '';
         border-left: 2px solid $gray-600;        
         position: absolute;
@@ -159,15 +185,14 @@ body {
     }
 }
 
-    .down-arrow {
-        margin-top: 69px;
-        width: 35px;
-        height: 15px;
-        margin-left: 30px;  
+.down-arrow {
+    margin-top: 69px;
+    width: 35px;
+    height: 15px;
 
-        img {
-            width: 100%;
-            height: auto;
-        }      
-    }     
+    img {
+        width: 100%;
+        height: auto;
+    }      
+}     
 

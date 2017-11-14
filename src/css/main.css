@@ -6767,8 +6767,7 @@ header {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  resize: both;
-  overflow: scroll; }
+  resize: both; }
 
 header:before {
   content: '';
@@ -6814,7 +6813,8 @@ header div.container {
     color: #fff;
     font-size: 15px; }
     header div.container div.join-free-month .join-free-month-container {
-      width: 256px; }
+      width: 256px;
+      margin-right: 30px; }
       header div.container div.join-free-month .join-free-month-container a {
         width: 256px;
         height: 60px;
@@ -6825,25 +6825,58 @@ header div.container {
         line-height: 45px; }
     @media (max-width: 1023px) {
       header div.container div.join-free-month .join-free-month-container {
+        margin-right: 0px;
         width: 100%; }
         header div.container div.join-free-month .join-free-month-container a {
           width: 266px;
           height: 50px;
           font-size: 15px;
-          line-height: 25px; } }
-  header div.container .summer-slam-live h3 {
-    color: #ec1828;
-    font-size: 19px;
-    font-weight: 700; }
-    header div.container .summer-slam-live h3 p {
-      color: #fff;
-      font-size: 17px; }
-  header div.container .summer-slam-live .summer-slam-image-container {
-    width: 133px;
-    height: 78px; }
-    header div.container .summer-slam-live .summer-slam-image-container img {
-      max-width: 100%;
-      height: auto; }
+          line-height: 38px; } }
+  header div.container .summer-slam-live {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: flex-left;
+        -ms-flex-pack: flex-left;
+            justify-content: flex-left;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 0 -10px; }
+    @media (max-width: 1023px) {
+      header div.container .summer-slam-live {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-top: 30px; } }
+    header div.container .summer-slam-live .summer-slam-info-container {
+      width: 135px;
+      height: 100;
+      margin-left: 20px; }
+      header div.container .summer-slam-live .summer-slam-info-container h3 {
+        color: #ec1828;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0; }
+      header div.container .summer-slam-live .summer-slam-info-container p {
+        color: #fff;
+        font-size: 19px;
+        margin: 0;
+        line-height: 22px; }
+    header div.container .summer-slam-live .summer-slam-image-container {
+      width: 133px;
+      height: auto;
+      margin-left: 30px; }
+      header div.container .summer-slam-live .summer-slam-image-container img {
+        max-width: 100%;
+        height: auto; }
 
 .subheader {
   height: auto;
@@ -6872,7 +6905,7 @@ header div.container {
     padding: 0; }
   .grid-divider-gray > [class*='col-'] {
     position: static; }
-  .grid-divider-gray > [class*='col-']:nth-child(n+2):before {
+  .grid-divider-gray > [class*='col-']:nth-child(n+2):after {
     content: '';
     border-left: 2px solid #868e96;
     position: absolute;
@@ -6883,8 +6916,7 @@ header div.container {
 .down-arrow {
   margin-top: 69px;
   width: 35px;
-  height: 15px;
-  margin-left: 30px; }
+  height: 15px; }
   .down-arrow img {
     width: 100%;
     height: auto; }
@@ -6946,5 +6978,5 @@ header div.container {
     height: 15px;
     bottom: 0; } }
 
-.navbar-wwe .nav-item .join-now {
-  background-color: #ec1828; }
+.navbar-wwe .join-now .nav-link {
+  color: #ec1828 !important; }
